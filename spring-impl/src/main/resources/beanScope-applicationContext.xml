@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<beans>
+	<bean id="myLoggerConfig" class="com.personal.learning.MyLoggerConfig" init-method="initLogger">
+		<property name="rootLoggerLevel" value="FINE" />
+		<property name="printedLoggerLevel" value="FINE"/>
+	</bean>
+    <!-- Define your beans here -->
+	<bean id="myFortune"
+		  class="com.personal.learning.package1.HappyFortuneService">
+	</bean>
+	<bean id="myCoach"
+	class="com.personal.learning.package2.BaseballCoach"
+	scope="prototype">
+
+	<!-- set up constructor injection-->
+	<constructor-arg ref= "myFortune"></constructor-arg>
+	</bean>
+
+
+	
+
+
+
+
+	</beans>
+<!--	<bean id="myCoach"-->
+<!--		  class="com.personal.learning.package2.TrackCoach">-->
+<!--	</bean>-->
+    
+    <!-- define the dependency -->
+
+
+    <!--
+    <bean id="myCoach"
+        class="com.luv2code.springdemo.BaseballCoach">         
+    </bean>
+    -->
+
+</beans>
+
+
+
+
+
