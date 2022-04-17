@@ -14,7 +14,7 @@ public class AnnotationDemoApp {
         System.out.println(tennisCoach.getDailyWorkout());
         System.out.println(tennisCoach.getDailyFortune());
         */
-        // for cricket coach
+        // for hockey coach
         Coach hockeyCoach = context.getBean("hockeyCoach", Coach.class);
         hockeyCoach.getDailyWorkout();
         hockeyCoach.getDailyFortune();

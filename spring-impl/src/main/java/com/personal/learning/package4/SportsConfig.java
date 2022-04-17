@@ -1,13 +1,14 @@
-package com.personal.learning.package1;
+package com.personal.learning.package4;
 
 import com.personal.learning.package2.Coach;
 import com.personal.learning.package2.FortuneService;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-//@ComponentScan("com.personal.learning.package1")
+@ComponentScan("com.personal.learning.package4")
 @PropertySource("classpath:info.properties")
 public class SportsConfig {
         // define bean for sad fortune service

@@ -1,4 +1,4 @@
-package com.personal.learning.package1;
+package com.personal.learning.package4;
 
 import com.personal.learning.package2.Coach;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
