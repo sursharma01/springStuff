@@ -1,12 +1,12 @@
-package com.learn.jackson.json.rest;
+package com.luv2code.springdemo.rest;
 
-public class StudentErrorResponse {
+public class CustomerErrorResponse {
     private int status;
     private String message;
     private long timestamp;
 
-    public StudentErrorResponse(){}
-    public StudentErrorResponse(int status, String message, long timestamp) {
+    public CustomerErrorResponse(){}
+    public CustomerErrorResponse(int status, String message, long timestamp) {
         this.status = status;
         this.message = message;
         this.timestamp = timestamp;
